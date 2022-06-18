@@ -1,0 +1,14 @@
+html {
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 52%;
+  }
+
+  .container-one {
+    display: block;
+    text-align: center;
+  }
+}

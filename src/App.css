@@ -1,38 +1,99 @@
-.App {
+h1 {
+  font-weight: bold;
+}
+
+.container-one {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-one h1 {
+  margin: 0 0 0 5rem;
+}
+
+.inside-container-one {
+  margin: 0.7rem 8rem 0 0;
+}
+
+.inside-container-one .trial-button {
+  margin: 0 1rem;
+  width: 15rem;
+  background-color: rgb(3, 3, 74);
+  border-color: rgb(3, 3, 74);
+}
+
+.inside-container-one .login-button {
+  width: 15rem;
+  background-color: orange;
+  border-color: orange;
+}
+
+.container-two {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container-two .main {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container-two .main form {
+  width: 40rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-two .main h1,
+p {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.container-two .main .email-input {
+  margin: 1.5rem 0;
+  height: 4rem;
+}
+
+.container-two .main .password-input {
+  height: 4rem;
+}
+
+.container-two .main .login-button2 {
+  background-color: rgb(3, 3, 74);
   color: white;
+  width: inherit;
+  height: 4.5rem;
+  margin: 2rem 0;
 }
 
-.App-link {
-  color: #61dafb;
+.container-two .main .more-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.container-two .main .more-text a {
+  color: black;
+}
+
+.container-two .color {
+  height: 50rem;
+  width: 80rem;
+  background-color: rgb(3, 3, 74);
+}
+
+@media screen and (max-width: 375px) {
+  .container-one h1 {
+    margin: 2rem 0 0 15.5rem;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container-two {
+    margin: 13rem 0 0 0;
+  }
+
+  .container-two .color {
+    display: none;
+  }
+
+  .container-one .inside-container-one {
+    display: none;
   }
 }
